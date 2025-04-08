@@ -1,13 +1,12 @@
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, CheckCircle } from "lucide-react"
 
 export default function Contact() {
   return (
-    <section className="section-padding" id="contact">
-      <div className="container">
+    <section className="py-20" id="contact">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <div className="text-sm text-gray-500 mb-2">CONTACT US</div>
-            <h2 className="text-4xl font-bold mb-6">Get a Free consultation to boost your business</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Get a Free consultation to boost your business</h2>
             <p className="text-lg text-gray-600 mb-8">
               Schedule a free consultation with our Amazon marketing experts to discuss your business goals and how we
               can help you achieve them.
@@ -17,33 +16,23 @@ export default function Contact() {
               <h3 className="text-xl font-bold mb-4">What you'll get:</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
-                    ✓
-                  </div>
+                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
                   <span>Comprehensive Amazon strategy tailored to your business</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
-                    ✓
-                  </div>
+                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
                   <span>Expert advice on optimizing your product listings</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
-                    ✓
-                  </div>
+                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
                   <span>PPC campaign recommendations to maximize ROI</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
-                    ✓
-                  </div>
+                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
                   <span>Competitive analysis to identify market opportunities</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mt-1">
-                    ✓
-                  </div>
+                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
                   <span>Growth projections based on your current performance</span>
                 </li>
               </ul>
@@ -86,7 +75,7 @@ export default function Contact() {
                 <input type="text" placeholder="Company Name" className="form-input" />
                 <input type="url" placeholder="Website URL" className="form-input" />
 
-                <button type="submit" className="black-button w-full">
+                <button type="submit" className="green-button w-full">
                   Submit <ArrowRight className="h-4 w-4" />
                 </button>
               </form>
@@ -97,4 +86,3 @@ export default function Contact() {
     </section>
   )
 }
-

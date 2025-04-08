@@ -1,11 +1,12 @@
 import Header from "@/components/header"
 import Hero from "@/components/hero"
+import { ClientLogos } from "@/components/client-logos"
+import AboutSection from "@/components/about-section"
+import { GrowthChart } from "@/components/growth-chart"
 import Services from "@/components/services"
-import About from "@/components/about"
-import Process from "@/components/process"
-import Work from "@/components/work"
+import CaseStudies from "@/components/case-studies"
 import Testimonials from "@/components/testimonials"
-import Partners from "@/components/partners"
+import Process from "@/components/process"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 
@@ -15,16 +16,16 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <ClientLogos />
+        <AboutSection />
+        <GrowthChart />
         <Services />
-        <About />
-        <Process />
-        <Work />
+        <CaseStudies />
         <Testimonials />
-        <Partners />
+        <Process />
         <Contact />
       </main>
       <Footer />
     </div>
   )
 }
-
