@@ -16,7 +16,7 @@ export default function Process() {
           <div className="grid gap-6">
             <div className="process-card">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#7c3aed] flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
                   1
                 </div>
                 <h3 className="text-xl font-bold">Deep Dive Audit and Diagnosis</h3>
@@ -28,7 +28,7 @@ export default function Process() {
 
             <div className="process-card">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#7c3aed] flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
                   2
                 </div>
                 <h3 className="text-xl font-bold">Examining Competitors and Strategy Planning</h3>
@@ -41,7 +41,7 @@ export default function Process() {
 
             <div className="process-card">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#7c3aed] flex items-center justify-center text-white font-bold">
+                <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
                   3
                 </div>
                 <h3 className="text-xl font-bold">Launching and Fine Tuning</h3>

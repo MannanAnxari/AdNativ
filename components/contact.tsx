@@ -16,23 +16,23 @@ export default function Contact() {
               <h3 className="text-xl font-bold mb-4">What you'll get:</h3>
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                   <span>Comprehensive Amazon strategy tailored to your business</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                   <span>Expert advice on optimizing your product listings</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                   <span>PPC campaign recommendations to maximize ROI</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                   <span>Competitive analysis to identify market opportunities</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                   <span>Growth projections based on your current performance</span>
                 </li>
               </ul>

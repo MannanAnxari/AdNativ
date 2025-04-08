@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero-section pt-32">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Heading and subtitle */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-6">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 font-syne">
             Lead Your Way Towards Profitable Success on Amazon
           </h1>
@@ -23,7 +23,7 @@ export default function Hero() {
         <div>
           <div className="w-full">
             <Image
-              src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=600&q=80"
+              src="/_hero.png"
               alt="Amazon marketing dashboard"
               width={1200}
               height={600}

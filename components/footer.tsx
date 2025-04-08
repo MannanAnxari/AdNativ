@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -7,12 +8,21 @@ export default function Footer() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid md:grid-cols-12 gap-8 mb-16">
           <div className="md:col-span-4">
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-[#7c3aed] rounded-md flex items-center justify-center">
+            {/* <div className="flex items-center gap-2 mb-6">
+              <div className="w-10 h-10 bg-purple-600 rounded-md flex items-center justify-center">
                 <span className="text-white text-lg font-bold">A</span>
               </div>
               <span className="navbar-logo uppercase">AdNativ</span>
-            </div>
+            </div> */}
+            <Link href="/" className="flex items-center gap-2 mb-7">
+              <Image
+                src="/logo.png"
+                alt="AdNativ Logo"
+                width={140}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </Link>
             <p className="text-gray-400 mb-6">
               Lead your way towards profitable success on Amazon with our expert marketing strategies and data-driven
               approach.
@@ -20,25 +30,25 @@ export default function Footer() {
             <div className="flex gap-3">
               <Link
                 href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-[#7c3aed] hover:text-white transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
               >
                 <Facebook size={18} />
               </Link>
               <Link
                 href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-[#7c3aed] hover:text-white transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
               >
                 <Twitter size={18} />
               </Link>
               <Link
                 href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-[#7c3aed] hover:text-white transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
               >
                 <Instagram size={18} />
               </Link>
               <Link
                 href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-[#7c3aed] hover:text-white transition-colors"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
               >
                 <Linkedin size={18} />
               </Link>
@@ -48,7 +58,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold mb-6 relative">
               <span className="relative z-10">Quick Links</span>
-              <span className="absolute bottom-0 left-0 w-12 h-1 bg-[#7c3aed]"></span>
+              <span className="absolute bottom-0 left-0 w-12 h-1 bg-purple-600"></span>
             </h3>
             <ul className="space-y-3">
               <li>
@@ -97,7 +107,7 @@ export default function Footer() {
           <div className="md:col-span-2">
             <h3 className="text-lg font-bold mb-6 relative">
               <span className="relative z-10">Services</span>
-              <span className="absolute bottom-0 left-0 w-12 h-1 bg-[#7c3aed]"></span>
+              <span className="absolute bottom-0 left-0 w-12 h-1 bg-purple-600"></span>
             </h3>
             <ul className="space-y-3">
               <li>
@@ -138,19 +148,19 @@ export default function Footer() {
           <div className="md:col-span-4">
             <h3 className="text-lg font-bold mb-6 relative">
               <span className="relative z-10">Contact Us</span>
-              <span className="absolute bottom-0 left-0 w-12 h-1 bg-[#7c3aed]"></span>
+              <span className="absolute bottom-0 left-0 w-12 h-1 bg-purple-600"></span>
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                <Mail className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                 <span className="text-gray-400">info@adnativ.com</span>
               </li>
               <li className="flex items-start gap-3">
-                <Phone className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                <Phone className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                 <span className="text-gray-400">+1 (234) 567-890</span>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-[#7c3aed] shrink-0 mt-0.5" />
+                <MapPin className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
                 <span className="text-gray-400">123 Marketing Street, Digital City</span>
               </li>
             </ul>
@@ -163,7 +173,7 @@ export default function Footer() {
                   placeholder="Your email"
                   className="bg-gray-800 text-white px-4 py-2 rounded-l-md w-full focus:outline-none focus:ring-1 focus:ring-[#7c3aed]"
                 />
-                <button className="bg-[#7c3aed] text-white px-3 py-2 rounded-r-md">
+                <button className="bg-purple-600 text-white px-3 py-2 rounded-r-md">
                   <ArrowRight size={20} />
                 </button>
               </div>
