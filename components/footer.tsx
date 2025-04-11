@@ -1,201 +1,307 @@
-import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Twitter, Mail, Phone, MapPin, ArrowRight } from "lucide-react"
-import Image from "next/image"
+import {
+  ArrowRight,
+  Instagram,
+  Twitter,
+  Facebook,
+  Youtube,
+} from "lucide-react";
+import Image from "next/image";
 
-export default function Footer() {
+export default function FooterSection() {
   return (
-    <footer className="bg-black text-white pt-16 pb-8">
-      <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid md:grid-cols-12 gap-8 mb-16">
-          <div className="md:col-span-4">
-            {/* <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-purple-600 rounded-md flex items-center justify-center">
-                <span className="text-white text-lg font-bold">A</span>
+    <footer className="bg-[#f2f0ff] rounded-3xl max-w-7xl container mx-auto my-12 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 pt-16 pb-8">
+        {/* Top Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          <div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
+              See how we can help your business grow with digital marketing
+            </h2>
+          </div>
+          <div className="flex flex-col items-start lg:items-end justify-between">
+            <div className="text-right mb-6">
+              <p className="text-sm mb-1">
+                Ready to speak with a marketing expert? Give us a ring
+              </p>
+              <p className="text-lg font-medium">888-400-5050</p>
+            </div>
+            <button className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium">
+              GET A FREE AUDIT <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
+        </div>
+
+        {/* Divider with curve */}
+        <div className="relative h-px mt-20 mb-28">
+          {/* <div className="absolute left-1/2 -translate-x-1/2 -top-8 w-64 h-16 bg-[#f2f0ff] rounded-full"></div> */}
+          <Image
+            width={800}
+            height={100}
+            alt="img"
+            className="w-full"
+            src={"/border-center.svg"}
+          />
+        </div>
+
+        {/* Partners Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+          <div>
+            <p className="font-bold uppercase mb-6">A PARTNER, NOT A VENDOR</p>
+            <div className="flex flex-wrap gap-8">
+              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+                <GoogleCloudPartner />
               </div>
-              <span className="navbar-logo uppercase">AdNativ</span>
-            </div> */}
-            <Link href="/" className="flex items-center gap-2 mb-7">
-              <Image
-                src="/logo.png"
-                alt="AdNativ Logo"
-                width={140}
-                height={40}
-                className="h-10 w-auto"
-              />
-            </Link>
-            <p className="text-gray-400 mb-6">
-              Lead your way towards profitable success on Amazon with our expert marketing strategies and data-driven
-              approach.
-            </p>
-            <div className="flex gap-3">
-              <Link
-                href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
-              >
-                <Facebook size={18} />
-              </Link>
-              <Link
-                href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
-              >
-                <Twitter size={18} />
-              </Link>
-              <Link
-                href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
-              >
-                <Instagram size={18} />
-              </Link>
-              <Link
-                href="#"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 text-gray-400 hover:bg-purple-600 hover:text-white transition-colors"
-              >
-                <Linkedin size={18} />
-              </Link>
+              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+                <MetaBusinessPartner />
+              </div>
+              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+                <GooglePartner />
+              </div>
+              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+                <ShopifyPartner />
+              </div>
+              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+                <TikTokPartner />
+              </div>
             </div>
           </div>
-
-          <div className="md:col-span-2">
-            <h3 className="text-lg font-bold mb-6 relative">
-              <span className="relative z-10">Quick Links</span>
-              <span className="absolute bottom-0 left-0 w-12 h-1 bg-purple-600"></span>
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#services"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#case-studies"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Case Studies
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#contact"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Contact
-                </Link>
-              </li>
-            </ul>
+          <div className="text-right">
+            <h3 className="text-5xl md:text-6xl font-bold mb-2">6.7</h3>
+            <p className="text-sm">
+              / Average ROAS
+              <br />
+              across our <span className="text-blue-600">100+ Global</span>
+              <br />
+              Clients on SEO, PPC & Social
+            </p>
           </div>
+        </div>
 
-          <div className="md:col-span-2">
-            <h3 className="text-lg font-bold mb-6 relative">
-              <span className="relative z-10">Services</span>
-              <span className="absolute bottom-0 left-0 w-12 h-1 bg-purple-600"></span>
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Amazon SEO
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> PPC Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Listing Optimization
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-white hover:pl-2 transition-all duration-300 flex items-center"
-                >
-                  <span className="mr-2">›</span> Brand Analytics
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="md:col-span-4">
-            <h3 className="text-lg font-bold mb-6 relative">
-              <span className="relative z-10">Contact Us</span>
-              <span className="absolute bottom-0 left-0 w-12 h-1 bg-purple-600"></span>
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
-                <span className="text-gray-400">info@adnativ.com</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Phone className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
-                <span className="text-gray-400">+1 (234) 567-890</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-purple-600 shrink-0 mt-0.5" />
-                <span className="text-gray-400">123 Marketing Street, Digital City</span>
-              </li>
-            </ul>
-
-            <div className="mt-6">
-              <h4 className="font-semibold mb-3">Subscribe to our newsletter</h4>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="bg-gray-800 text-white px-4 py-2 rounded-l-md w-full focus:outline-none focus:ring-1 focus:ring-[#7c3aed]"
-                />
-                <button className="bg-purple-600 text-white px-3 py-2 rounded-r-md">
-                  <ArrowRight size={20} />
-                </button>
-              </div>
+        {/* Solutions Section */}
+        <div className="bg-white rounded-3xl p-10 mb-16">
+          <h3 className="font-bold uppercase mb-8">SOLUTIONS</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div>
+              <a href="#" className="text-sm hover:underline block mb-4">
+                Paid search marketing
+              </a>
+              <a href="#" className="text-sm hover:underline block">
+                Search engine optimization
+              </a>
+            </div>
+            <div>
+              <a href="#" className="text-sm hover:underline block mb-4">
+                Email marketing
+              </a>
+              <a href="#" className="text-sm hover:underline block">
+                Conversion rate optimization
+              </a>
+            </div>
+            <div>
+              <a href="#" className="text-sm hover:underline block mb-4">
+                Social Media Marketing
+              </a>
+              <a href="#" className="text-sm hover:underline block">
+                Google shopping
+              </a>
+            </div>
+            <div>
+              <a href="#" className="text-sm hover:underline block mb-4">
+                Influencer marketing
+              </a>
+              <a href="#" className="text-sm hover:underline block">
+                Amazon shopping
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm mb-4 md:mb-0">© 2025 AdNativ. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link href="#" className="text-gray-500 text-sm hover:text-white">
+        {/* Navigation Links */}
+        <div className="flex flex-wrap justify-center gap-8 mb-16">
+          <a href="#" className="text-sm hover:underline">
+            About
+          </a>
+          <a href="#" className="text-sm hover:underline">
+            Blog
+          </a>
+          <a href="#" className="text-sm hover:underline">
+            Careers
+          </a>
+          <a href="#" className="text-sm hover:underline">
+            Team
+          </a>
+          <a href="#" className="text-sm hover:underline">
+            Success Stories
+          </a>
+          <a href="#" className="text-sm hover:underline">
+            Awards
+          </a>
+          <a href="#" className="text-sm hover:underline">
+            Contact
+          </a>
+        </div>
+
+        {/* Divider */}
+        <div className="h-px bg-gray-200 mb-8"></div>
+
+        {/* Bottom Section */}
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="mb-4 md:mb-0">
+            <p className="text-sm text-gray-600">
+              © 2025 FivePerks. All rights reserved
+            </p>
+          </div>
+          <div className="flex gap-6 mb-4 md:mb-0">
+            <a href="#" className="text-sm text-gray-600 hover:underline">
+              Terms & Conditions
+            </a>
+            <a href="#" className="text-sm text-gray-600 hover:underline">
               Privacy Policy
-            </Link>
-            <Link href="#" className="text-gray-500 text-sm hover:text-white">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-gray-500 text-sm hover:text-white">
-              Cookie Policy
-            </Link>
+            </a>
+          </div>
+          <div className="flex gap-4">
+            <a href="#" className="text-gray-600 hover:text-black">
+              <Instagram className="h-5 w-5" />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-black">
+              <Twitter className="h-5 w-5" />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-black">
+              <Facebook className="h-5 w-5" />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-black">
+              <Youtube className="h-5 w-5" />
+            </a>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
+}
+
+// Partner Logo Components
+function GoogleCloudPartner() {
+  return (
+    <div className="flex items-center gap-2">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 11L20 6L12 1L4 6L12 11Z" fill="#000000" />
+        <path
+          d="M4 6V16L12 21L20 16V6L12 11L4 6Z"
+          fill="#000000"
+          fillOpacity="0.7"
+        />
+      </svg>
+      <div>
+        <div className="text-xs">Google Cloud</div>
+        <div className="text-sm font-medium">Partner</div>
+      </div>
+    </div>
+  );
+}
+
+function MetaBusinessPartner() {
+  return (
+    <div className="flex items-center gap-2">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2Z"
+          fill="#000000"
+        />
+        <path
+          d="M15.5 12C15.5 10.067 13.933 8.5 12 8.5C10.067 8.5 8.5 10.067 8.5 12C8.5 13.933 10.067 15.5 12 15.5C13.933 15.5 15.5 13.933 15.5 12Z"
+          fill="white"
+        />
+      </svg>
+      <div>
+        <div className="text-xs">Meta Business</div>
+        <div className="text-sm font-medium">Partners</div>
+      </div>
+    </div>
+  );
+}
+
+function GooglePartner() {
+  return (
+    <div className="flex items-center gap-2">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12 11L20 6L12 1L4 6L12 11Z" fill="#000000" />
+        <path
+          d="M4 6V16L12 21L20 16V6L12 11L4 6Z"
+          fill="#000000"
+          fillOpacity="0.7"
+        />
+      </svg>
+      <div>
+        <div className="text-xs">Google</div>
+        <div className="text-sm font-medium">Partner</div>
+      </div>
+    </div>
+  );
+}
+
+function ShopifyPartner() {
+  return (
+    <div className="flex items-center gap-2">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M15.5 3L14.5 7H13L14 3H15.5Z" fill="#000000" />
+        <path
+          d="M19 7.5C18.5 7 17.5 6.5 16.5 6.5C15.5 6.5 13 7 13 9C13 11 17 11 17 13C17 15 14 14.5 13 14C12 13.5 11.5 13 11.5 13L10.5 15C10.5 15 11.5 16 13 16.5C14.5 17 16 16.5 17 15.5C18 14.5 18.5 12 16.5 10.5C14.5 9 13.5 9.5 13.5 8.5C13.5 7.5 15 7.5 16 8C17 8.5 17.5 9 17.5 9L19 7.5Z"
+          fill="#000000"
+        />
+        <path d="M11 16.5L13 9H10L8 16.5H11Z" fill="#000000" />
+        <path d="M7 9L5 16.5H8L10 9H7Z" fill="#000000" />
+      </svg>
+      <div>
+        <div className="text-xs">shopify</div>
+        <div className="text-sm font-medium">partner</div>
+      </div>
+    </div>
+  );
+}
+
+function TikTokPartner() {
+  return (
+    <div className="flex items-center gap-2">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19.589 6.686C19.3 6.236 19.1 5.741 19 5.22C18.9 4.7 18.9 4.2 18.9 3.7H15.2V15.4C15.2 15.9 15.1 16.4 14.9 16.8C14.7 17.2 14.4 17.6 14.1 17.9C13.8 18.2 13.4 18.4 13 18.5C12.6 18.6 12.1 18.7 11.7 18.6C11.3 18.5 10.9 18.4 10.5 18.2C10.1 18 9.79999 17.7 9.49999 17.4C9.19999 17.1 9.09999 16.7 8.89999 16.3C8.79999 15.9 8.79999 15.4 8.79999 15C8.89999 14.6 8.99999 14.2 9.19999 13.8C9.39999 13.4 9.69999 13.1 9.99999 12.8C10.3 12.5 10.7 12.3 11.1 12.2C11.5 12.1 11.9 12.1 12.3 12.2V8.5C11.9 8.4 11.4 8.4 11 8.5C10.6 8.6 10.1 8.7 9.69999 8.9C9.29999 9.1 8.89999 9.3 8.49999 9.6C8.09999 9.9 7.79999 10.2 7.49999 10.6C7.19999 11 6.99999 11.4 6.79999 11.8C6.59999 12.2 6.49999 12.7 6.39999 13.1C6.29999 13.6 6.29999 14.1 6.29999 14.6C6.29999 15.1 6.39999 15.6 6.49999 16.1C6.59999 16.6 6.79999 17 6.99999 17.5C7.19999 17.9 7.49999 18.3 7.79999 18.6C8.09999 18.9 8.49999 19.2 8.89999 19.5C9.29999 19.8 9.69999 20 10.2 20.2C10.6 20.4 11.1 20.5 11.6 20.6C12.1 20.7 12.6 20.7 13.1 20.7C13.6 20.7 14.1 20.6 14.6 20.5C15.1 20.4 15.5 20.2 16 20C16.4 19.8 16.8 19.5 17.2 19.2C17.6 18.9 17.9 18.6 18.2 18.2C18.5 17.8 18.7 17.4 18.9 16.9C19.1 16.4 19.2 16 19.3 15.5C19.4 15 19.4 14.5 19.4 14V9.5C19.6 9.7 19.8 9.8 20 10C20.2 10.2 20.4 10.3 20.6 10.5C20.8 10.7 21.1 10.8 21.3 10.9C21.5 11 21.8 11.1 22 11.2V7.5C21.4 7.5 20.8 7.3 20.3 7C20.1 6.9 19.8 6.8 19.6 6.7"
+          fill="#000000"
+        />
+      </svg>
+      <div>
+        <div className="text-xs">TikTok:</div>
+        <div className="text-sm font-medium">Marketing Partner</div>
+      </div>
+    </div>
+  );
 }

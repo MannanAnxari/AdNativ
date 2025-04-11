@@ -54,7 +54,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-[#f0f0ff] text-foreground font-sans;
+    @apply text-foreground font-sans;
   }
 }
 
@@ -63,9 +63,14 @@
 }
 
 .hero-section {
-  background-color: #f0f0ff;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+
+.hero-last-section {
+  background-image: url("/border.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
 }
 
 .section-padding {
@@ -106,7 +111,7 @@
 }
 
 .green-button {
-  background-color: #2276C1;
+  background-color: #2276c1;
   color: #ffffff;
   border-radius: 9999px;
   padding: 12px 24px;
@@ -118,8 +123,8 @@
 
 .green-outline-button {
   background-color: transparent;
-  color: #2276C1;
-  border: 1px solid #2276C1;
+  color: #2276c1;
+  border: 1px solid #2276c1;
   border-radius: 9999px;
   padding: 12px 24px;
   font-weight: 500;
@@ -143,7 +148,8 @@
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .service-icon {
@@ -223,7 +229,8 @@
   background-color: #ffffff;
   border-radius: 24px;
   padding: 32px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .process-card {
@@ -235,7 +242,8 @@
 
 .process-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .process-number {
@@ -256,7 +264,8 @@
   background-color: #ffffff;
   border-radius: 24px;
   padding: 32px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .form-input {
@@ -282,14 +291,15 @@
 
 .case-study-metric:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .green-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #2276C1;
+  background-color: #2276c1;
   display: inline-block;
   margin-right: 8px;
 }
@@ -304,6 +314,24 @@
 
 .metric-chart-fill {
   height: 100%;
-  background-color: #2276C1;
+  background-color: #2276c1;
   border-radius: 2px;
+}
+.border-centered {
+  background-color: #ffffff00;
+  background-image: url(https://numerique.vamtam.com/wp-content/uploads/2023/05/border-center.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

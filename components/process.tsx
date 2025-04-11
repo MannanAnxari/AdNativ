@@ -1,12 +1,14 @@
-import { ArrowRight } from "lucide-react"
-import Image from "next/image"
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Process() {
   return (
-    <section className="py-20 bg-[#f8f9fa]" id="process">
+    <section className="py-20" id="process">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our 3 step Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Our 3 step Process
+          </h2>
           <p className="text-lg text-gray-600 max-w-3xl">
             We follow a proven methodology to ensure your success on Amazon.
           </p>
@@ -19,10 +21,13 @@ export default function Process() {
                 <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
                   1
                 </div>
-                <h3 className="text-xl font-bold">Deep Dive Audit and Diagnosis</h3>
+                <h3 className="text-xl font-bold">
+                  Deep Dive Audit and Diagnosis
+                </h3>
               </div>
               <p className="text-gray-600">
-                We analyze your current Amazon presence, identify opportunities, and develop a customized strategy.
+                We analyze your current Amazon presence, identify opportunities,
+                and develop a customized strategy.
               </p>
             </div>
 
@@ -31,11 +36,13 @@ export default function Process() {
                 <div className="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold">
                   2
                 </div>
-                <h3 className="text-xl font-bold">Examining Competitors and Strategy Planning</h3>
+                <h3 className="text-xl font-bold">
+                  Examining Competitors and Strategy Planning
+                </h3>
               </div>
               <p className="text-gray-600">
-                We research your competitors, identify gaps in the market, and create a strategic plan to outperform
-                them.
+                We research your competitors, identify gaps in the market, and
+                create a strategic plan to outperform them.
               </p>
             </div>
 
@@ -47,7 +54,8 @@ export default function Process() {
                 <h3 className="text-xl font-bold">Launching and Fine Tuning</h3>
               </div>
               <p className="text-gray-600">
-                We implement our strategies, monitor performance, and continuously optimize for maximum results.
+                We implement our strategies, monitor performance, and
+                continuously optimize for maximum results.
               </p>
             </div>
           </div>
@@ -73,5 +81,5 @@ export default function Process() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -1,9 +1,9 @@
-import Image from "next/image"
-import { ArrowRight } from "lucide-react"
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="hero-section pt-32">
+    <section className="hero-section bg-custom-gradient pt-32">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Heading and subtitle */}
         <div className="text-center mb-6">
@@ -33,28 +33,38 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-          <div className="bg-white p-6 rounded-xl flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
-              <span className="text-purple-500 text-xl">✓</span>
+        <div className="mt-16 py-6 hero-last-section pb-[5rem]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* First section - Thriving Community */}
+            <div className="flex items-center justify-center md:justify-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
+                <span className="text-purple-500 text-xl">✓</span>
+              </div>
+              <div>
+                <h3 className="font-bold">Thriving Community</h3>
+                <p className="text-gray-600 text-sm">Amazon Sellers</p>
+              </div>
             </div>
-            <div>
-              <h3 className="font-bold">Thriving Community</h3>
-              <p className="text-gray-600 text-sm">Amazon Sellers</p>
-            </div>
-          </div>
 
-          <div className="bg-white p-6 rounded-xl flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-              <span className="text-blue-500 text-xl">✓</span>
+            {/* Middle section - Connect with experts */}
+            <div className="flex items-center justify-center gap-4">
+              <button className="font-medium flex items-center gap-2">
+                Connect our experts <ArrowRight className="h-4 w-4" />
+              </button>
             </div>
-            <div>
-              <h3 className="font-bold">Contracted Expertise</h3>
-              <p className="text-gray-600 text-sm">For Premier Retailers</p>
+
+            {/* Last section - Contracted Expertise */}
+            <div className="flex items-center justify-center md:justify-end gap-4">
+              <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
+                <span className="text-blue-500 text-xl">✓</span>
+              </div>
+              <div>
+                <h3 className="font-bold">Contracted Expertise</h3>
+                <p className="text-gray-600 text-sm">For Premier Retailers</p>
+              </div>
             </div>
           </div>
         </div>
-
         <div className="hidden mt-16 py-6 border-t border-b border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex items-center justify-center md:justify-start gap-4">
@@ -107,5 +117,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
