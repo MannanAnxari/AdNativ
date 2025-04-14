@@ -47,7 +47,7 @@
 
 export default function WhatWeDoSection() {
   return (
-    <section className="bg-white">
+    <section className="bg-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:pb-24 md:pt-16">
         {/* Header Section */}
         <div className="mb-20">

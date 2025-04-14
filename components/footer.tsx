@@ -1,3 +1,4 @@
+"use client"
 import {
   ArrowRight,
   Instagram,
@@ -6,10 +7,11 @@ import {
   Youtube,
 } from "lucide-react";
 import Image from "next/image";
+import Button from "./Button";
 
 export default function FooterSection() {
   return (
-    <footer className="bg-[#f2f0ff] rounded-3xl max-w-7xl container mx-auto my-12 overflow-hidden">
+    <footer className="bg-[#e7f2ff] rounded-3xl max-w-7xl container mx-auto my-12 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 pt-16 pb-8">
         {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
@@ -25,15 +27,12 @@ export default function FooterSection() {
               </p>
               <p className="text-lg font-medium">888-400-5050</p>
             </div>
-            <button className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium">
-              GET A FREE AUDIT <ArrowRight className="h-4 w-4" />
-            </button>
+          <Button text="Get a Free Audit " href="#about" type="button" showArrow />
           </div>
         </div>
 
         {/* Divider with curve */}
         <div className="relative h-px mt-20 mb-28">
-          {/* <div className="absolute left-1/2 -translate-x-1/2 -top-8 w-64 h-16 bg-[#f2f0ff] rounded-full"></div> */}
           <Image
             width={800}
             height={100}
@@ -44,74 +43,23 @@ export default function FooterSection() {
         </div>
 
         {/* Partners Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          <div>
-            <p className="font-bold uppercase mb-6">A PARTNER, NOT A VENDOR</p>
-            <div className="flex flex-wrap gap-8">
-              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
-                <GoogleCloudPartner />
-              </div>
-              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
-                <MetaBusinessPartner />
-              </div>
-              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
-                <GooglePartner />
-              </div>
-              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
-                <ShopifyPartner />
-              </div>
-              <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
-                <TikTokPartner />
-              </div>
-            </div>
-          </div>
-          <div className="text-right">
-            <h3 className="text-5xl md:text-6xl font-bold mb-2">6.7</h3>
-            <p className="text-sm">
-              / Average ROAS
-              <br />
-              across our <span className="text-blue-600">100+ Global</span>
-              <br />
-              Clients on SEO, PPC & Social
-            </p>
-          </div>
-        </div>
-
-        {/* Solutions Section */}
         <div className="bg-white rounded-3xl p-10 mb-16">
-          <h3 className="font-bold uppercase mb-8">SOLUTIONS</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div>
-              <a href="#" className="text-sm hover:underline block mb-4">
-                Paid search marketing
-              </a>
-              <a href="#" className="text-sm hover:underline block">
-                Search engine optimization
-              </a>
+          <h3 className="font-bold uppercase mb-8">OUR PARTNERS</h3>
+          <div className="flex flex-wrap gap-8 justify-between">
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <GoogleCloudPartner />
             </div>
-            <div>
-              <a href="#" className="text-sm hover:underline block mb-4">
-                Email marketing
-              </a>
-              <a href="#" className="text-sm hover:underline block">
-                Conversion rate optimization
-              </a>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <MetaBusinessPartner />
             </div>
-            <div>
-              <a href="#" className="text-sm hover:underline block mb-4">
-                Social Media Marketing
-              </a>
-              <a href="#" className="text-sm hover:underline block">
-                Google shopping
-              </a>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <GooglePartner />
             </div>
-            <div>
-              <a href="#" className="text-sm hover:underline block mb-4">
-                Influencer marketing
-              </a>
-              <a href="#" className="text-sm hover:underline block">
-                Amazon shopping
-              </a>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <ShopifyPartner />
+            </div>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <TikTokPartner />
             </div>
           </div>
         </div>
@@ -179,7 +127,7 @@ export default function FooterSection() {
   );
 }
 
-// Partner Logo Components
+// Partner Logo Components (keep the same as before)
 function GoogleCloudPartner() {
   return (
     <div className="flex items-center gap-2">

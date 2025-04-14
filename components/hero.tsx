@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Button from "./Button";
 
 export default function Hero() {
   return (
@@ -14,9 +15,7 @@ export default function Hero() {
             Let us be your proud partner helping you become the No 1 Brand.
           </p>
           <div className="mt-8">
-            <a href="#contact" className="green-button">
-              Contact Us Now
-            </a>
+            <Button text="Contact Us Now" href="#contact" type="button" showArrow />
           </div>
         </div>
 

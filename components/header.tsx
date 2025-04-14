@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
+import Button from "./Button";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Header() {
         "about",
         "case-studies",
         "process",
-        "contact",
+        "feedbacks",
       ];
       for (const section of sections.reverse()) {
         const element = document.getElementById(section);
@@ -82,11 +83,11 @@ export default function Header() {
             <div className="bg-gray-50 rounded-full px-2 py-1 flex items-center">
               {[
                 { name: "Home", href: "/" },
-                { name: "Services", href: "#services" },
                 { name: "About Us", href: "#about" },
+                { name: "Services", href: "#services" },
                 { name: "Case Studies", href: "#case-studies" },
                 { name: "Process", href: "#process" },
-                { name: "Contact", href: "#contact" },
+                { name: "Feedbacks", href: "#feedbacks" },
               ].map((item) => (
                 <Link
                   key={item.name}
@@ -108,17 +109,8 @@ export default function Header() {
           </nav>
 
           {/* Desktop CTA Button */}
-          <div className="hidden lg:block">
-            <a
-              href="#contact"
-              className="
-                bg-black text-white font-medium px-6 py-2.5 rounded-full
-                inline-flex items-center gap-2 transition-colors
-                hover:bg-gray-800
-              "
-            >
-              Free Audit <ArrowRight className="h-4 w-4" />
-            </a>
+          <div className="hidden lg:block"> 
+            <Button text="Free Audit" href="#feedbacks" type="button" showArrow />
           </div>
 
           {/* Mobile Menu Button */}
@@ -145,15 +137,15 @@ export default function Header() {
         `}
       >
         <div className="h-full flex flex-col p-6 pt-24">
-          <nav className="flex-1">
+          <nav className="flex-1 backdrop-blur-[9px] bg-gray-700 bg-opacity-10 rounded-3xl">
             <ul className="space-y-6">
               {[
                 { name: "Home", href: "/" },
-                { name: "Services", href: "#services" },
                 { name: "About Us", href: "#about" },
+                { name: "Services", href: "#services" },
                 { name: "Case Studies", href: "#case-studies" },
                 { name: "Process", href: "#process" },
-                { name: "Contact", href: "#contact" },
+                { name: "Feedbacks", href: "#feedbacks" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link
@@ -177,17 +169,7 @@ export default function Header() {
           </nav>
 
           <div className="mt-8">
-            <a
-              href="#contact"
-              className="
-                w-full bg-black text-white font-medium px-6 py-3 rounded-full
-                flex items-center justify-center gap-2
-                transition-colors hover:bg-gray-800
-              "
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Free Audit <ArrowRight className="h-4 w-4" />
-            </a>
+            <Button text="Free Audit" href="#feedbacks" type="button" showArrow />
           </div>
         </div>
       </div>

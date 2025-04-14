@@ -21,7 +21,7 @@ export default function Home() {
         <CapabilitiesSection />
         <ClientLogos />
         {/* <GrowthChart /> */}
-        <Services />
+        {/* <Services /> */}
         <CaseStudies />
         <Process />
         {/* <Contact /> */}

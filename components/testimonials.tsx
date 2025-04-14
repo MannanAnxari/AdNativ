@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import Button from "./Button";
 
 export default function TestimonialsSection() {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -44,7 +45,7 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="bg-[#f8f8f8] rounded-3xl max-w-7xl container mx-auto my-12 overflow-hidden">
+    <section className="bg-[#f8f8f8] rounded-3xl max-w-7xl container mx-auto my-12 overflow-hidden" id="feedbacks">
       <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-16">
         {/* Stats Section */}
         <div className="mb-24">
@@ -150,16 +151,14 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Leads Box */}
-            <div className="bg-[#f2f0ff] rounded-3xl p-8 flex flex-col justify-between">
+            <div className="bg-[#e7f2ff] rounded-3xl p-8 flex flex-col justify-between">
               <div>
                 <h3 className="text-3xl md:text-4xl font-bold mb-1">
                   282,000+
                 </h3>
                 <p className="text-sm">Leads generated so far...</p>
               </div>
-              <button className="bg-black text-white px-6 py-3 rounded-full flex items-center gap-2 font-medium mt-4">
-                CONTACT US <ArrowRight className="h-4 w-4" />
-              </button>
+              <Button text="Contact Us" href="#about" type="button" showArrow />
             </div>
           </div>
         </div>
@@ -168,7 +167,7 @@ export default function TestimonialsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 relative bg-white rounded-3xl p-16">
           {/* Left Side - Testimonial */}
           <div>
-            <div className="text-6xl text-indigo-500 font-serif mb-6">"</div>
+            <div className="text-6xl text-blue-500 font-serif mb-6">"</div>
             <div className="min-h-[160px]">
               <p className="text-xl italic mb-8">
                 "{testimonials[currentTestimonial].quote}"
