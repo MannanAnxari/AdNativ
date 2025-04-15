@@ -11,8 +11,8 @@ import Button from "./Button";
 
 export default function FooterSection() {
   return (
-    <footer className="bg-[#e7f2ff] rounded-3xl max-w-7xl container mx-auto my-12 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 pt-16 pb-8">
+    <footer className="bg-[#e7f2ff] rounded-3xl max-w-7xl  mx-auto my-12 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8  pt-16 pb-8">
         {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div>
@@ -32,7 +32,7 @@ export default function FooterSection() {
         </div>
 
         {/* Divider with curve */}
-        <div className="relative h-px mt-20 mb-28">
+        <div className="relative h-px my-12 md:my-20">
           <Image
             width={800}
             height={100}
@@ -43,7 +43,7 @@ export default function FooterSection() {
         </div>
 
         {/* Partners Section */}
-        <div className="bg-white rounded-3xl p-10 mb-16">
+        <div className="bg-white rounded-3xl p-10 mb-12">
           <h3 className="font-bold uppercase mb-8">OUR PARTNERS</h3>
           <div className="flex flex-wrap gap-8 justify-between">
             <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
@@ -65,7 +65,7 @@ export default function FooterSection() {
         </div>
 
         {/* Navigation Links */}
-        <div className="flex flex-wrap justify-center gap-8 mb-16">
+        <div className="flex hidden flex-wrap justify-center gap-8 mb-16">
           <a href="#" className="text-sm hover:underline">
             About
           </a>

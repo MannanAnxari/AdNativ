@@ -67,6 +67,12 @@
   padding-bottom: 80px;
 }
 
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 25px;
+  }
+}
+
 .hero-last-section {
   background-image: url("/border.svg");
   background-position: bottom center;

@@ -45,8 +45,8 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="bg-[#f8f8f8] rounded-3xl max-w-7xl container mx-auto my-12 overflow-hidden" id="feedbacks">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-16">
+    <section className="bg-[#f8f8f8] rounded-3xl max-w-7xl mx-auto my-12 overflow-hidden" id="feedbacks">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8  py-16">
         {/* Stats Section */}
         <div className="mb-24">
           <h2 className="text-3xl md:text-4xl font-bold mb-16">

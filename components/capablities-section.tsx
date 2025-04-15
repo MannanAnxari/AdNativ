@@ -116,50 +116,7 @@ const services = [
       description:
         "Engage with your audience across various social platforms to build brand awareness and drive traffic to your website.",
     },
-    {
-      icon: (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M5 7.5C6.38071 7.5 7.5 6.38071 7.5 5C7.5 3.61929 6.38071 2.5 5 2.5C3.61929 2.5 2.5 3.61929 2.5 5C2.5 6.38071 3.61929 7.5 5 7.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path
-            d="M15 17.5C16.3807 17.5 17.5 16.3807 17.5 15C17.5 13.6193 16.3807 12.5 15 12.5C13.6193 12.5 12.5 13.6193 12.5 15C12.5 16.3807 13.6193 17.5 15 17.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path d="M7.5 5H12.5V15" stroke="#126ad2" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      title: "User experience design",
-      description:
-        "Create intuitive, user-friendly interfaces that enhance customer satisfaction and drive conversions.",
-    },
-    {
-      icon: (
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M2.5 5.83333L10 10L17.5 5.83333"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M2.5 10L10 14.1667L17.5 10"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path d="M10 2.5V14.1667" stroke="#126ad2" strokeWidth="2" strokeLinecap="round" />
-        </svg>
-      ),
-      title: "Data analytics",
-      description:
-        "Transform raw data into actionable insights to drive strategic business decisions and optimize performance.",
-    },
+
   ],
   // Second slide - 8 more services (2 rows of 4)
   [
@@ -244,6 +201,9 @@ const services = [
       title: "Marketing automation",
       description: "Streamline your marketing processes to save time and resources while improving results.",
     },
+
+  ],
+  [
     {
       icon: (
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +234,51 @@ const services = [
       title: "Customer retention",
       description: "Develop strategies to keep your customers coming back and maximize their lifetime value.",
     },
-  ],
+    {
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5 7.5C6.38071 7.5 7.5 6.38071 7.5 5C7.5 3.61929 6.38071 2.5 5 2.5C3.61929 2.5 2.5 3.61929 2.5 5C2.5 6.38071 3.61929 7.5 5 7.5Z"
+            stroke="#126ad2"
+            strokeWidth="2"
+          />
+          <path
+            d="M15 17.5C16.3807 17.5 17.5 16.3807 17.5 15C17.5 13.6193 16.3807 12.5 15 12.5C13.6193 12.5 12.5 13.6193 12.5 15C12.5 16.3807 13.6193 17.5 15 17.5Z"
+            stroke="#126ad2"
+            strokeWidth="2"
+          />
+          <path d="M7.5 5H12.5V15" stroke="#126ad2" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      ),
+      title: "User experience design",
+      description:
+        "Create intuitive, user-friendly interfaces that enhance customer satisfaction and drive conversions.",
+    },
+    {
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M2.5 5.83333L10 10L17.5 5.83333"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M2.5 10L10 14.1667L17.5 10"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path d="M10 2.5V14.1667" stroke="#126ad2" strokeWidth="2" strokeLinecap="round" />
+        </svg>
+      ),
+      title: "Data analytics",
+      description:
+        "Transform raw data into actionable insights to drive strategic business decisions and optimize performance.",
+    },
+  ]
   // Add more slides if needed
 ]
 
@@ -283,92 +287,94 @@ export default function CapabilitiesSection() {
   const nextRef = useRef(null)
 
   return (
-    <section className="bg-custom-gradient py-16 md:py-24 mt-[330px]" id="services">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Image Section */}
-        <div className="mb-12 flex justify-center">
-          <div className="rounded-2xl overflow-hidden w-full -mt-[20%] -translate-y-[20%]">
-            <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L6NMw8B1DTQtYbb4vJQiX9ij94mmSV.png"
-              alt="Team collaborating at a design table with laptops and creative materials"
-              width={1000}
-              height={500}
-              className="w-full h-auto object-cover"
-            />
-          </div>
-        </div>
-
-        {/* Heading Section */}
-        <div className="mb-12">
-          <h2 className="text-sm font-bold uppercase tracking-wider mb-4 text-black">OUR PREMIUM SERVICES</h2>
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-2xl mb-8 text-black">
-            Innovative solutions for your digital success
-          </h1>
-          <div className="flex items-center justify-between">
-            <Button text="View All Solutions" href="#services" type="button" showArrow />
-            <div className="flex items-center gap-4">
-              <button
-                ref={prevRef}
-                className="w-10 h-10 rounded-full border border-black flex items-center justify-center"
-                aria-label="Previous slide"
-              >
-                <ChevronLeft className="h-5 w-5" />
-              </button>
-              <button
-                ref={nextRef}
-                className="w-10 h-10 rounded-full border border-black flex items-center justify-center"
-                aria-label="Next slide"
-              >
-                <ChevronRight className="h-5 w-5" />
-              </button>
+    <section className="bg-custom-gradient py-16 md:py-24 md:mt-[330px] mt-12" id="services">
+      <div className="mx-auto px-4 sm:px-6 md:px-8 py-8 md:py-12">
+        <div className="max-w-7xl mx-auto">
+          {/* Image Section */}
+          <div className="mb-12 flex justify-center">
+            <div className="rounded-2xl overflow-hidden w-full -mt-[20%] -translate-y-[20%]">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L6NMw8B1DTQtYbb4vJQiX9ij94mmSV.png"
+                alt="Team collaborating at a design table with laptops and creative materials"
+                width={1000}
+                height={500}
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
-        </div>
 
-        {/* Cards Section with Swiper */}
-        <div className="relative">
-          <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={30}
-            slidesPerView={1}
-            navigation={{
-              prevEl: prevRef.current,
-              nextEl: nextRef.current,
-            }}
-            pagination={{
-              clickable: true,
-              el: ".swiper-pagination",
-            }}
-            onBeforeInit={(swiper) => {
-              // @ts-ignore
-              swiper.params.navigation.prevEl = prevRef.current
-              // @ts-ignore
-              swiper.params.navigation.nextEl = nextRef.current
-            }}
-            className="pb-12"
-          >
-            {services.map((slideServices, slideIndex) => (
-              <SwiperSlide key={slideIndex}>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                  {slideServices.map((service, serviceIndex) => (
-                    <div key={serviceIndex} className="bg-white p-8 rounded-xl h-full">
-                      <div className="mb-6">
-                        <div className="w-10 h-10 rounded-full bg-[#f2f0ff] flex items-center justify-center mb-6">
-                          {service.icon}
+          {/* Heading Section */}
+          <div className="mb-12">
+            <h2 className="text-sm font-bold uppercase tracking-wider mb-4 text-black">OUR PREMIUM SERVICES</h2>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-2xl mb-8 text-black">
+              Innovative solutions for your digital success
+            </h1>
+            <div className="flex items-center justify-between">
+              <Button text="View All Solutions" href="#services" type="button" showArrow />
+              <div className="flex items-center gap-4">
+                <button
+                  ref={prevRef}
+                  className="w-10 h-10 rounded-full border border-black flex items-center justify-center"
+                  aria-label="Previous slide"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button
+                  ref={nextRef}
+                  className="w-10 h-10 rounded-full border border-black flex items-center justify-center"
+                  aria-label="Next slide"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Cards Section with Swiper */}
+          <div className="relative">
+            <Swiper
+              modules={[Navigation, Pagination]}
+              spaceBetween={30}
+              slidesPerView={1}
+              navigation={{
+                prevEl: prevRef.current,
+                nextEl: nextRef.current,
+              }}
+              pagination={{
+                clickable: true,
+                el: ".swiper-pagination",
+              }}
+              onBeforeInit={(swiper) => {
+                // @ts-ignore
+                swiper.params.navigation.prevEl = prevRef.current
+                // @ts-ignore
+                swiper.params.navigation.nextEl = nextRef.current
+              }}
+              className="pb-12"
+            >
+              {services.map((slideServices, slideIndex) => (
+                <SwiperSlide key={slideIndex}>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {slideServices.map((service, serviceIndex) => (
+                      <div key={serviceIndex} className="bg-white p-8 rounded-xl h-full">
+                        <div className="mb-6">
+                          <div className="w-10 h-10 rounded-full bg-[#f2f0ff] flex items-center justify-center mb-6">
+                            {service.icon}
+                          </div>
+                          <h3 className="text-xl font-bold text-black">{service.title}</h3>
                         </div>
-                        <h3 className="text-xl font-bold text-black">{service.title}</h3>
-                      </div>
-                      <p className="text-sm text-gray-700 mb-6">{service.description}</p>
-                      <a href="#" className="text-xs font-bold uppercase tracking-wider text-black">
+                        <p className="text-sm text-gray-700 mb-6">{service.description}</p>
+                        {/* <a href="#" className="text-xs font-bold uppercase tracking-wider text-black">
                         LEARN MORE
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <div className="swiper-pagination mt-6 flex justify-center gap-2"></div>
+                      </a> */}
+                      </div>
+                    ))}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+            <div className="swiper-pagination mt-6 flex justify-center gap-2"></div>
+          </div>
         </div>
       </div>
     </section>

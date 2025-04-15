@@ -79,50 +79,7 @@ export function ClientLogos() {
             ))}
           </Swiper>
         </div>
-
-        {/* Second row of logos with reverse direction */}
-        <div>
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={2}
-            loop={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-              reverseDirection: true,
-            }}
-            breakpoints={{
-              640: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-              },
-              768: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-              },
-              1024: {
-                slidesPerView: 6,
-                spaceBetween: 30,
-              },
-            }}
-            className="logo-swiper"
-          >
-            {[...logos].reverse().map((logo, index) => (
-              <SwiperSlide key={index}>
-                <div className="flex items-center justify-center h-24">
-                  <Image
-                    src={logo.src || "/placeholder.svg"}
-                    alt={logo.alt}
-                    width={120}
-                    height={60}
-                    className="invert"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+ 
       </div>
     </section>
   )
