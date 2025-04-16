@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -559,17 +559,7 @@ export default function CapabilitiesSection() {
             <Swiper
               modules={[Navigation, Pagination]}
               spaceBetween={30}
-              slidesPerView={1} // Mobile पर 1 स्लाइड दिखाएगा
-              breakpoints={{
-                // When window width is >= 640px (md breakpoint)
-                640: {
-                  slidesPerView: 2, // Tablet पर 2 स्लाइड दिखाएगा
-                },
-                // When window width is >= 1024px (lg breakpoint)
-                1024: {
-                  slidesPerView: 3, // Desktop पर 3 स्लाइड दिखाएगा
-                },
-              }}
+              slidesPerView={1}
               navigation={{
                 prevEl: prevRef.current,
                 nextEl: nextRef.current,
@@ -588,9 +578,7 @@ export default function CapabilitiesSection() {
             >
               {services.map((slideServices, slideIndex) => (
                 <SwiperSlide key={slideIndex}>
-                  <div className="grid grid-cols-1 gap-6">
-                    {" "}
-                    {/* हमेशा 1 कॉलम का ग्रिड */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {slideServices.map((service, serviceIndex) => (
                       <div
                         key={serviceIndex}
@@ -607,6 +595,9 @@ export default function CapabilitiesSection() {
                         <p className="text-sm text-gray-700 mb-6">
                           {service.description}
                         </p>
+                        {/* <a href="#" className="text-xs font-bold uppercase tracking-wider text-black">
+                        LEARN MORE
+                      </a> */}
                       </div>
                     ))}
                   </div>
