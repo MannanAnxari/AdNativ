@@ -65,7 +65,7 @@ export default function Header() {
           fixed top-0 left-0 right-0 z-40 w-full
           transition-all duration-300 ease-in-out
           ${visible ? "translate-y-0" : "-translate-y-full"}
-          ${prevScrollPos > 10 ? "py-3 bg-white shadow-md border-b border-gray-100" : "py-4 bg-white md:bg-[#ebf5ff]"}
+          ${prevScrollPos > 10 ? "py-3 bg-white shadow-md border-b border-gray-100" : "py-4 bg-white md:bg-[#e0f1ff]"}
         `}
       >
         <div className="container mx-auto px-4 max-w-7xl">
@@ -85,7 +85,7 @@ export default function Header() {
                     className={`
                       px-4 py-2 text-sm font-medium rounded-full transition-colors
                       ${activeSection === item.href.replace("#", "") || (item.href === "/" && activeSection === "home")
-                        ? "bg-blue-600 text-white shadow-sm"
+                        ? "bg-blue-500 text-white shadow-sm"
                         : "text-gray-700 hover:bg-gray-100"
                       }
                     `}
@@ -98,7 +98,7 @@ export default function Header() {
 
             {/* Desktop CTA Button */}
             <div className="hidden lg:block">
-              <Button text="Free Audit" href="#feedbacks" type="button" showArrow />
+              <Button text="Free Audit" href="/contact" type="button" showArrow />
             </div>
 
             {/* Mobile Menu Button */}
@@ -136,7 +136,7 @@ export default function Header() {
                         block text-base font-medium py-3 px-4 rounded-lg transition-colors
                         ${activeSection === item.href.replace("#", "") ||
                           (item.href === "/" && activeSection === "home")
-                          ? "bg-blue-50 text-blue-600 font-semibold"
+                          ? "bg-blue-50 text-blue-500 font-semibold"
                           : "text-gray-700 hover:bg-gray-50"
                         }
                       `}

@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 interface ButtonProps {
   text: string
@@ -73,9 +74,9 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={baseClasses} onClick={onClick}>
+      <Link href={href} className={baseClasses} onClick={onClick}>
         {content}
-      </a>
+      </Link>
     )
   }
 
