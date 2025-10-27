@@ -9,9 +9,9 @@ export default function Process() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="mb-8 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Our 3 Step Process</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-4">Fiveperks Process</h2>
           <p className="text-base md:text-lg text-gray-600 max-w-3xl">
-            We follow a proven methodology to ensure your success on Amazon.
+          Our approach is structured, scalable, and simple:
           </p>
         </div>
 
@@ -27,16 +27,14 @@ export default function Process() {
                     1
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-xl font-bold mb-2">Deep Dive Audit and Diagnosis</h3>
+                    <h3 className="text-lg md:text-xl font-bold mb-2">Research & Audit</h3>
                     <p className="text-sm md:text-base text-gray-600">
-                      Our journey begins with a comprehensive audit of your Amazon storefront and backend systems. We
-                      assess every aspect including listings, keywords, backend settings, reviews, and overall
-                      performance. Through this analysis, we identify key areas of improvement and untapped growth
-                      opportunities, and formulate a custom roadmap to align with your long-term business objectives.
+                    A key part of our analysis involves analyzing your current presence, your competitors,
+                    and the category of your products.
                     </p>
                   </div>
                 </div>
-                <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
+                 {/* <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
                   <div className="flex flex-wrap gap-2 md:gap-3">
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
                       Account Analysis
@@ -47,8 +45,8 @@ export default function Process() {
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
                       Strategy Development
                     </span>
-                  </div>
-                </div>
+                  </div> 
+                </div> */}
               </div>
             </div>
 
@@ -61,16 +59,14 @@ export default function Process() {
                     2
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-xl font-bold mb-2">Examining Competitors and Strategy Planning</h3>
+                    <h3 className="text-lg md:text-xl font-bold mb-2">Strategy Design</h3>
                     <p className="text-sm md:text-base text-gray-600">
-                      In this phase, we dive into competitive analysis to evaluate your top-performing competitors. We
-                      assess their strengths, pricing, ad strategies, and customer engagement to identify market gaps.
-                      Using this intelligence, we craft a high-impact strategy focused on positioning your brand as a
-                      market leader, boosting visibility, and enhancing profitability.
+                    Following that, we develop a customized roadmap suited to your brand's needs.
+
                     </p>
                   </div>
                 </div>
-                <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
+                {/* <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
                   <div className="flex flex-wrap gap-2 md:gap-3">
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
                       Competitor Analysis
@@ -82,7 +78,7 @@ export default function Process() {
                       Strategic Planning
                     </span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -95,16 +91,13 @@ export default function Process() {
                     3
                   </div>
                   <div>
-                    <h3 className="text-lg md:text-xl font-bold mb-2">Launching and Fine Tuning</h3>
+                    <h3 className="text-lg md:text-xl font-bold mb-2">Implementation</h3>
                     <p className="text-sm md:text-base text-gray-600">
-                      After planning, we move into execution — launching optimized listings, targeted ad campaigns, and
-                      promotional strategies. Our team closely tracks KPIs, conversion rates, and ad performance to make
-                      data-driven tweaks in real time. This ensures ongoing optimization, reduced ad spend wastage, and
-                      continuous improvement for long-term growth and profitability.
+                    From listings to ads, visuals to content, everything is handled by us.
                     </p>
                   </div>
                 </div>
-                <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
+                {/* <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
                   <div className="flex flex-wrap gap-2 md:gap-3">
                     <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
                       Implementation
@@ -116,7 +109,67 @@ export default function Process() {
                       Continuous Optimization
                     </span>
                   </div>
+                </div> */}
+              </div>
+            </div>
+            {/* Step 4 */}
+            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-[30px] md:rounded-[40px] border border-gray-100 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 md:w-32 h-24 md:h-32 bg-gray-50 rounded-bl-[80px] md:rounded-bl-[100px] -z-0"></div>
+              <div className="relative z-10">
+                <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-purple-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                    3
+                  </div>
+                  <div>
+                    <h3 className="text-lg md:text-xl font-bold mb-2">Optimization</h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                    To increase sales, we test, refine, and scale what works.
+                    </p>
+                  </div>
                 </div>
+                {/* <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
+                  <div className="flex flex-wrap gap-2 md:gap-3">
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
+                      Implementation
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
+                      Performance Monitoring
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
+                      Continuous Optimization
+                    </span>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+            {/* Step 5 */}
+            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-[30px] md:rounded-[40px] border border-gray-100 shadow-sm relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 md:w-32 h-24 md:h-32 bg-gray-50 rounded-bl-[80px] md:rounded-bl-[100px] -z-0"></div>
+              <div className="relative z-10">
+                <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-purple-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
+                    3
+                  </div>
+                  <div>
+                    <h3 className="text-lg md:text-xl font-bold mb-2">Reporting</h3>
+                    <p className="text-sm md:text-base text-gray-600">
+                    We provide you with regular updates, performance metrics, and action plans.
+                    </p>
+                  </div>
+                </div>
+                {/* <div className="pl-0 sm:pl-20 mt-4 md:mt-6">
+                  <div className="flex flex-wrap gap-2 md:gap-3">
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
+                      Implementation
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
+                      Performance Monitoring
+                    </span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs md:text-sm">
+                      Continuous Optimization
+                    </span>
+                  </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -135,7 +188,7 @@ export default function Process() {
               </div>
 
               <div className="bg-purple-600 text-white p-6 md:p-8 rounded-[30px] md:rounded-[40px]">
-                <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">Why Our Process Works</h3>
+                <h3 className="text-lg md:text-xl font-bold mb-3 md:mb-4">Optimization</h3>
                 <ul className="space-y-2 md:space-y-3">
                   <li className="flex items-center gap-3">
                     <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-white flex-shrink-0"></div>

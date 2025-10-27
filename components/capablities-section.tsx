@@ -38,207 +38,9 @@ const services = [
           />
         </svg>
       ),
-      title: "Paid search marketing",
+      title: "Amazon Brand Management",
       description:
-        "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="10" cy="10" r="8" stroke="#126ad2" strokeWidth="2" />
-          <path
-            d="M10 6V10L13 13"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-      ),
-      title: "Search engine optimization",
-      description:
-        "Maintain your best spot on the search results page, so you can find new customers and re-engage loyal ones.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2.5 5.5L9 10.5L17.5 5.5"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <rect
-            x="2.5"
-            y="5.5"
-            width="15"
-            height="10"
-            rx="1"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-        </svg>
-      ),
-      title: "Email marketing",
-      description:
-        "When it comes to reaching your target audience, you can't get much closer than direct to their inboxes.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10 2.5V17.5"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-          <path
-            d="M5 7.5L10 2.5L15 7.5"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ),
-      title: "Conversion rate optimization",
-      description:
-        "Craft campaigns — built just for your business — to ensure real and quantifiable ROI.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M17 5.5H3C2.72386 5.5 2.5 5.72386 2.5 6V14C2.5 14.2761 2.72386 14.5 3 14.5H17C17.2761 14.5 17.5 14.2761 17.5 14V6C17.5 5.72386 17.2761 5.5 17 5.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path
-            d="M6 8.5H14"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-          <path
-            d="M6 11.5H12"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-      ),
-      title: "Content marketing",
-      description:
-        "Create valuable, relevant content to attract and engage your target audience and drive profitable customer action.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path
-            d="M7.5 10L9.16667 11.6667L12.5 8.33333"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ),
-      title: "Social media marketing",
-      description:
-        "Engage with your audience across various social platforms to build brand awareness and drive traffic to your website.",
-    },
-  ],
-  // Second slide - 8 more services (2 rows of 4)
-  [
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path
-            d="M10 6V10H14"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-      ),
-      title: "Performance marketing",
-      description:
-        "Focus on measurable results to optimize your marketing spend and maximize ROI.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2.5 5L10 10L17.5 5"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M2.5 10L10 15L17.5 10"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ),
-      title: "Web development",
-      description:
-        "Build responsive, user-friendly websites that drive engagement and conversions.",
+      "We establish, position, and protect your brand’s presence in the Amazon marketplace. Through comprehensive brand health audits and strategic store optimization, we ensure compliance with Amazon’s policies while enhancing visibility, competitiveness, and long-term growth.",
     },
     {
       icon: (
@@ -272,9 +74,123 @@ const services = [
           />
         </svg>
       ),
-      title: "Mobile app development",
+      title: "Amazon Listing",
       description:
-        "Create native and cross-platform mobile applications that engage users on the go.",
+        "Creating scroll-stopping visuals with clear messaging and targeted storytelling is one of our specialties. Images speak to the buyer's needs and compel them to take action.",
+    },
+    {
+      icon: (
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="10" cy="10" r="8" stroke="#126ad2" strokeWidth="2" />
+          <path
+            d="M10 6V10L13 13"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+      ),
+      title: "Amazon Advertisement (PPC)",
+      description:
+        "We focus on driving traffic, reducing ad waste, and enhancing sales velocity with data-driven PPC strategies. What do we focus on? ACoS reduction, improved ROAS, and conversions that are real.",
+
+    },
+    {
+      icon: (
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.5 5.5L9 10.5L17.5 5.5"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <rect
+            x="2.5"
+            y="5.5"
+            width="15"
+            height="10"
+            rx="1"
+            stroke="#126ad2"
+            strokeWidth="2"
+          />
+        </svg>
+      ),
+      title: "Amazon A+ Content",
+      description:
+        "Invest in trust building. Boost conversions. We develop enhanced content that showcases your brand value and tells your product story better than your competitors.",
+    },
+    {
+      icon: (
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M10 2.5V17.5"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+          <path
+            d="M5 7.5L10 2.5L15 7.5"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      ),
+      title: "Amazon DSP",
+      description:
+        "We create data-driven display ads that retarget, expand reach, and build awareness beyond search engines—an excellent option for brands looking to scale quickly.",
+    },
+    {
+      icon: (
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M17 5.5H3C2.72386 5.5 2.5 5.72386 2.5 6V14C2.5 14.2761 2.72386 14.5 3 14.5H17C17.2761 14.5 17.5 14.2761 17.5 14V6C17.5 5.72386 17.2761 5.5 17 5.5Z"
+            stroke="#126ad2"
+            strokeWidth="2"
+          />
+          <path
+            d="M6 8.5H14"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+          <path
+            d="M6 11.5H12"
+            stroke="#126ad2"
+            strokeWidth="2"
+            strokeLinecap="round"
+          />
+        </svg>
+      ),
+      title: "Amazon Vendor Central Management",
+      description:
+        "We help Vendor Central members streamline orders, get the best deals, and protect pricing while keeping their catalogues retail-ready.",
     },
     {
       icon: (
@@ -291,41 +207,7 @@ const services = [
             strokeWidth="2"
           />
           <path
-            d="M7.5 7.5L12.5 12.5"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-          <path
-            d="M12.5 7.5L7.5 12.5"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-      ),
-      title: "Brand strategy",
-      description:
-        "Develop a cohesive brand identity that resonates with your target audience and sets you apart.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5 5L15 15"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M15 5L5 15"
+            d="M7.5 10L9.16667 11.6667L12.5 8.33333"
             stroke="#126ad2"
             strokeWidth="2"
             strokeLinecap="round"
@@ -333,10 +215,12 @@ const services = [
           />
         </svg>
       ),
-      title: "E-commerce solutions",
+      title: "Amazon Private Label (PL)",
       description:
-        "Build and optimize online stores that drive sales and provide seamless shopping experiences.",
-    },
+        "Our team helps customers launch their own brand under Amazon's umbrella while keeping scalability and market demand at the core.",
+   },
+
+
     {
       icon: (
         <svg
@@ -352,53 +236,16 @@ const services = [
             strokeWidth="2"
           />
           <path
-            d="M10 6V14"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-          <path
-            d="M6 10H14"
+            d="M10 6V10H14"
             stroke="#126ad2"
             strokeWidth="2"
             strokeLinecap="round"
           />
         </svg>
       ),
-      title: "Marketing automation",
+      title: "Amazon FBA Support",
       description:
-        "Streamline your marketing processes to save time and resources while improving results.",
-    },
-  ],
-  [
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2.5 5.83333L10 10L17.5 5.83333"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M2.5 10L10 14.1667"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      ),
-      title: "Video production",
-      description:
-        "Create engaging video content that tells your brand story and drives engagement across channels.",
+        "Using our tips, you will be able to navigate FBA safely and efficiently. We'll also help you manage inventory, logistics, and performance metrics so you can avoid delays and maximize efficiency.",
     },
     {
       icon: (
@@ -410,87 +257,24 @@ const services = [
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path
-            d="M7.5 10H12.5"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-      ),
-      title: "Customer retention",
-      description:
-        "Develop strategies to keep your customers coming back and maximize their lifetime value.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M5 7.5C6.38071 7.5 7.5 6.38071 7.5 5C7.5 3.61929 6.38071 2.5 5 2.5C3.61929 2.5 2.5 3.61929 2.5 5C2.5 6.38071 3.61929 7.5 5 7.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path
-            d="M15 17.5C16.3807 17.5 17.5 16.3807 17.5 15C17.5 13.6193 16.3807 12.5 15 12.5C13.6193 12.5 12.5 13.6193 12.5 15C12.5 16.3807 13.6193 17.5 15 17.5Z"
-            stroke="#126ad2"
-            strokeWidth="2"
-          />
-          <path
-            d="M7.5 5H12.5V15"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
-        </svg>
-      ),
-      title: "User experience design",
-      description:
-        "Create intuitive, user-friendly interfaces that enhance customer satisfaction and drive conversions.",
-    },
-    {
-      icon: (
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 20 20"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M2.5 5.83333L10 10L17.5 5.83333"
+            d="M2.5 5L10 10L17.5 5"
             stroke="#126ad2"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
-            d="M2.5 10L10 14.1667L17.5 10"
+            d="M2.5 10L10 15L17.5 10"
             stroke="#126ad2"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          <path
-            d="M10 2.5V14.1667"
-            stroke="#126ad2"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
         </svg>
       ),
-      title: "Data analytics",
+      title: "Amazon Business Support",
       description:
-        "Transform raw data into actionable insights to drive strategic business decisions and optimize performance.",
+        "Amazon's B2B platform requires smart positioning. We structure listings, pricing, and strategy to accommodate businesses' procurement-style shopping behavior.",
     },
   ],
   // Add more slides if needed
@@ -523,14 +307,14 @@ export default function CapabilitiesSection() {
           {/* Heading Section */}
           <div className="mb-12">
             <h2 className="text-sm font-bold uppercase tracking-wider mb-4 text-black">
-              OUR PREMIUM SERVICES
+            Our Dedicated Services
             </h2>
             <h1 className="text-4xl md:text-5xl font-bold leading-tight max-w-2xl mb-8 text-black">
-              Innovative solutions for your digital success
+            Amazon services customized to meet your brand needs.
             </h1>
             <div className="flex items-center justify-between">
               <Button
-                text="View All Solutions"
+                text="Let's grow together"
                 href="#services"
                 type="button"
                 showArrow

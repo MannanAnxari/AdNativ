@@ -16,18 +16,19 @@ export default function FooterSection() {
         {/* Top Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-              See how we can help your business grow with digital marketing
+            <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold leading-tight mb-4">
+            Stand out instead of just surviving with your brand. <br /> Join us on your journey to Amazon
+            success.
             </h2>
           </div>
           <div className="flex flex-col items-start lg:items-end justify-between">
             <div className="text-right mb-6">
               <p className="text-sm mb-1">
-                Ready to speak with a marketing expert? Give us a ring
+              349 B area HussaibAbad, Kala Board, Malir, Karachi
               </p>
-              <p className="text-lg font-medium">888-400-5050</p>
+              <p className="text-lg font-medium">+923021599403</p>
             </div>
-          <Button text="Get a Free Audit " href="#about" type="button" showArrow />
+          <Button text="GET STARTED" href="#about" type="button" showArrow />
           </div>
         </div>
 

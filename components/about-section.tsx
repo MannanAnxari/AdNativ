@@ -53,21 +53,21 @@ export default function WhatWeDoSection() {
           {/* Header Section */}
           <div className="mb-20">
             <h2 className="text-sm font-bold uppercase tracking-wider mb-5">
-              WHAT WE DO
+            What makes Fiveperks different?
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
               <div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-none">
-                  We solve digital challenges
+                We don't guess. We analyze, act, and adjust. 
                 </h1>
               </div>
 
               <div className="flex flex-col justify-between">
                 <p className="text-base md:text-lg text-gray-700 mb-10">
-                  Together, we help our clients achieve tangible, measurable
-                  results. Focused on business outcomes — we bring a unique set of
-                  expertise and skills to the party.
+                Fiveperks helps Amazon sellers become <strong>top-ranked</strong> from <strong>just being listed</strong>. We're not
+just another marketing agency. We're committed to assisting brands to sell smarter,
+scale faster, and dominate their categories on Amazon.
                 </p>
 
                 <div>
@@ -85,14 +85,12 @@ export default function WhatWeDoSection() {
             {/* Card 1 */}
             <div className="rounded-[40px] border border-gray-200 p-10 relative">
               <div className="mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold mb-0">Better</h3>
-                <h3 className="text-2xl md:text-3xl font-bold">audiences</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-0">Full Service Without Fluff:</h3>
               </div>
 
               <p className="text-gray-700">
-                Our proprietary solution leverages an in-house database of 260M+
-                customers and 2,000+ custom variables to build custom predictive
-                models to drive business growth — from only the best customers.
+              We don't just give advice, we implement, measure, and improve.
+
               </p>
 
               <div className="absolute top-10 right-10 w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center">
@@ -114,14 +112,10 @@ export default function WhatWeDoSection() {
             {/* Card 2 */}
             <div className="rounded-[40px] border border-gray-200 p-10 relative">
               <div className="mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold mb-0">Better</h3>
-                <h3 className="text-2xl md:text-3xl font-bold">analytics</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-0">Data-First Decisions:</h3>
               </div>
-
               <p className="text-gray-700">
-                Our proprietary solution leverages an in-house database of 260M+
-                customers and 2,000+ custom variables to build custom predictive
-                models to drive business growth — from only the best customers.
+              Every decision we make is based on performance analytics and buyer behavior insights.
               </p>
 
               <div className="absolute top-10 right-10 w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
@@ -143,14 +137,11 @@ export default function WhatWeDoSection() {
             {/* Card 3 */}
             <div className="rounded-[40px] border border-gray-200 p-10 relative">
               <div className="mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold mb-0">Better</h3>
-                <h3 className="text-2xl md:text-3xl font-bold">outcomes</h3>
+                <h3 className="text-2xl md:text-3xl font-bold mb-0">Full <br />Transparency</h3>
               </div>
 
               <p className="text-gray-700">
-                Our proprietary solution leverages an in-house database of 260M+
-                customers and 2,000+ custom variables to build custom predictive
-                models to drive business growth — from only the best customers.
+              We provide transparent reporting and communication at every step.
               </p>
 
               <div className="absolute top-10 right-10 w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">

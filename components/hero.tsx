@@ -11,10 +11,11 @@ export default function Hero() {
           {/* Heading and subtitle */}
           <div className="text-center mb-6">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 font-syne">
-              Lead Your Way Towards Profitable Success on Amazon
+            Amazon Services That Grow Your Sales —
+            Faster
             </h1>
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Let us be your proud partner helping you become the No 1 Brand.
+            We help brands dominate the Amazon jungle smartly and profitably!
             </p>
             <div className="mt-8">
               <Button text="Contact Us Now" href="#contact" type="button" showArrow />
@@ -54,15 +55,15 @@ export default function Hero() {
                   <span className="text-purple-500 text-xl">✓</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Thriving Community</h3>
-                  <p className="text-gray-600 text-sm">Amazon Sellers</p>
+                  <h3 className="font-bold text-lg">Talk to a Talented Team</h3>
+                  {/* <p className="text-gray-600 text-sm">Amazon Sellers</p> */}
                 </div>
               </div>
 
               {/* Middle section - Connect with experts */}
               <div className="md:flex hidden items-center justify-center gap-4">
                 <button className="font-medium flex items-center gap-2">
-                  Connect our experts <ArrowRight className="h-4 w-4" />
+                To Build Your Next Win <ArrowRight className="h-4 w-4" />
                 </button>
               </div>
 
@@ -72,8 +73,8 @@ export default function Hero() {
                   <span className="text-blue-500 text-xl">✓</span>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Contracted Expertise</h3>
-                  <p className="text-gray-600 text-sm">For Premier Retailers</p>
+                  <h3 className="font-bold text-lg">Expertise That Scales With You</h3>
+                  {/* <p className="text-gray-600 text-sm">For Premier Retailers</p> */}
                 </div>
               </div>
             </div>
