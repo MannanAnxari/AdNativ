@@ -10,9 +10,10 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: "AdNativ - Digital Marketing Agency",
-  description: "Lead your way towards profitable success with AdNativ",
-    generator: 'v0.dev'
+  title: "Fiverperks - Amazon Services Agency",
+  description:
+  "Amazon services agency specializing in Brand Management, PPC, A+ Content, FBA, and DSP. Boost your sales with faster scaling and improved selling through Fiveperks.",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
