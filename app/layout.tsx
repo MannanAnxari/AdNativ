@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Fiverperks - Amazon Services Agency",
   description:
   "Amazon services agency specializing in Brand Management, PPC, A+ Content, FBA, and DSP. Boost your sales with faster scaling and improved selling through Fiveperks.",
-  generator: 'v0.dev'
+  // generator: 'v0.dev'
 }
 
 export default function RootLayout({
