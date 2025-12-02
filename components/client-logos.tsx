@@ -16,12 +16,16 @@ const logos = [
   { src: "/clients/4.png", alt: "Client 4" },
   { src: "/clients/5.png", alt: "Client 5" },
   { src: "/clients/6.png", alt: "Client 6" },
+  { src: "/clients/7.png", alt: "Client 1" },
+  { src: "/clients/8.png", alt: "Client 2" },
   { src: "/clients/1.png", alt: "Client 1" },
   { src: "/clients/2.png", alt: "Client 2" },
   { src: "/clients/3.png", alt: "Client 3" },
   { src: "/clients/4.png", alt: "Client 4" },
   { src: "/clients/5.png", alt: "Client 5" },
   { src: "/clients/6.png", alt: "Client 6" },
+  { src: "/clients/7.png", alt: "Client 1" },
+  { src: "/clients/8.png", alt: "Client 2" },
 ]
 
 export function ClientLogos() {
@@ -72,14 +76,14 @@ export function ClientLogos() {
                     alt={logo.alt}
                     width={120}
                     height={60}
-                    className="invert"
+                    className="brightness-0"
                   />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
- 
+
       </div>
     </section>
   )

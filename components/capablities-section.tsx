@@ -295,7 +295,7 @@ export default function CapabilitiesSection() {
           <div className="mb-12 flex justify-center">
             <div className="rounded-2xl overflow-hidden w-full -mt-[20%] -translate-y-[20%]">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-L6NMw8B1DTQtYbb4vJQiX9ij94mmSV.png"
+                src="/capable.jpg"
                 alt="Team collaborating at a design table with laptops and creative materials"
                 width={1000}
                 height={500}
@@ -313,12 +313,13 @@ export default function CapabilitiesSection() {
             Amazon services customized to meet your brand needs.
             </h1>
             <div className="flex items-center justify-between">
-              <Button
+              {/* <Button
                 text="Let's grow together"
                 href="#services"
                 type="button"
                 showArrow
-              />
+              /> */}
+              <div></div>
               <div className="flex items-center gap-4">
                 <button
                   ref={prevRef}

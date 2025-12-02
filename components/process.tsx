@@ -118,7 +118,7 @@ export default function Process() {
               <div className="relative z-10">
                 <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 mb-4">
                   <div className="w-12 h-12 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-purple-600 flex items-center justify-center text-white font-bold text-xl shrink-0">
-                    3
+                    4
                   </div>
                   <div>
                     <h3 className="text-lg md:text-xl font-bold mb-2">Optimization</h3>
@@ -208,12 +208,12 @@ export default function Process() {
           </div>
         </div>
 
-        <div className="bg-white p-6 sm:p-8 md:p-10 rounded-[30px] md:rounded-[40px] border border-gray-100 shadow-sm text-center">
+        {/* <div className="bg-white p-6 sm:p-8 md:p-10 rounded-[30px] md:rounded-[40px] border border-gray-100 shadow-sm text-center">
           <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 md:mb-6 max-w-3xl mx-auto">
             Turn Clicks into Sales – Power Up Your Amazon Advertising Game!
           </h2>
           <Button text="Get Started" href="#about" type="button" showArrow />
-        </div>
+        </div> */}
       </div>
     </section>
   )

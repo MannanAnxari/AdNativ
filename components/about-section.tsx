@@ -70,12 +70,12 @@ just another marketing agency. We're committed to assisting brands to sell smart
 scale faster, and dominate their categories on Amazon.
                 </p>
 
-                <div>
+                {/* <div>
                   <a href="#" className="inline-block font-bold relative">
                     MORE ABOUT US
                     <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600"></span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

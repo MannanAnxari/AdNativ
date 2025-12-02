@@ -52,10 +52,10 @@ cross-border growth at scale.
                       <span className="font-bold text-lg md:text-xl">$750K </span>{" "}
                       <span className="text-sm md:text-base text-gray-500">Sales</span>
                     </div>
-                    <a href="#" className="text-xs md:text-sm font-medium text-purple-600 flex items-center group">
+                    {/* <a href="#" className="text-xs md:text-sm font-medium text-purple-600 flex items-center group">
                       View case study{" "}
                       <ArrowRight className="ml-1 h-3 w-3 md:h-4 md:w-4 transition-transform group-hover:translate-x-1" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="md:w-1/2 h-[180px] md:h-auto rounded-2xl overflow-hidden">
@@ -104,10 +104,10 @@ and strategic targeting, we maximized visibility while keeping ad spend ultra-ef
                       <span className="font-bold text-lg md:text-xl">11.28% </span>{" "}
                       <span className="text-sm md:text-base text-gray-500">ACoS</span>
                     </div>
-                    <a href="#" className="text-xs md:text-sm font-medium text-blue-600 flex items-center group">
+                    {/* <a href="#" className="text-xs md:text-sm font-medium text-blue-600 flex items-center group">
                       View case study{" "}
                       <ArrowRight className="ml-1 h-3 w-3 md:h-4 md:w-4 transition-transform group-hover:translate-x-1" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="md:w-1/2 h-[180px] md:h-auto rounded-2xl overflow-hidden">
@@ -126,9 +126,9 @@ and strategic targeting, we maximized visibility while keeping ad spend ultra-ef
 
           </div>
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <Button text="Get Similar Results" href="#feedbacks" type="button" showArrow />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

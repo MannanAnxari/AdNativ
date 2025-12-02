@@ -120,7 +120,7 @@ export default function ContactPage() {
                                         </h1>
                                         <p className="text-gray-800 max-w-lg text-base leading-relaxed">
                                             Feel free to reach out to us through your preferred method of contact. We are eager to connect
-                                            with you and explore how our digital marketing team can contribute to your success.
+                                            with you and explore how our team can contribute to your success.
                                         </p>
                                     </div>
 

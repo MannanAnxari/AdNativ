@@ -17,18 +17,18 @@ export default function FooterSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           <div>
             <h2 className="text-3xl md:text-3xl lg:text-3xl font-bold leading-tight mb-4">
-            Stand out instead of just surviving with your brand. <br /> Join us on your journey to Amazon
-            success.
+              Stand out instead of just surviving with your brand. <br /> Join us on your journey to Amazon
+              success.
             </h2>
           </div>
           <div className="flex flex-col items-start lg:items-end justify-between">
             <div className="text-right mb-6">
-              <p className="text-sm mb-1">
+              {/* <p className="text-sm mb-1">
               349 B area HussaibAbad, Kala Board, Malir, Karachi
-              </p>
+              </p> */}
               <p className="text-lg font-medium">+923021599403</p>
             </div>
-          <Button text="GET STARTED" href="#about" type="button" showArrow />
+            <Button text="GET STARTED" href="#about" type="button" showArrow />
           </div>
         </div>
 
@@ -46,7 +46,63 @@ export default function FooterSection() {
         {/* Partners Section */}
         <div className="bg-white rounded-3xl p-10 mb-12">
           <h3 className="font-bold uppercase mb-8">OUR PARTNERS</h3>
-          <div className="flex flex-wrap gap-8 justify-between">
+          <div className="flex flex-wrap gap-8 justify-between items-center">
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src={"/partners/1.png"}
+                alt={'partner'}
+                width={120}
+                height={60}
+                className="brightness-0"
+              />
+            </div>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src={"/partners/2.png"}
+                alt={'partner'}
+                width={120}
+                height={60}
+                className="brightness-0"
+              />
+            </div>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src={"/partners/3.png"}
+                alt={'partner'}
+                width={120}
+                height={60}
+                className="brightness-0"
+              />
+            </div>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src={"/partners/4.png"}
+                alt={'partner'}
+                width={80}
+                height={60}
+                className="brightness-0"
+              />
+            </div>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src={"/partners/5.png"}
+                alt={'partner'}
+                width={120}
+                height={60}
+                className="brightness-0"
+              />
+            </div>
+            <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
+              <Image
+                src={"/partners/6.png"}
+                alt={'partner'}
+                width={120}
+                height={60}
+                className="brightness-0"
+              />
+            </div>
+          </div>
+          {/* <div className="flex flex-wrap gap-8 justify-between">
             <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
               <GoogleCloudPartner />
             </div>
@@ -62,7 +118,7 @@ export default function FooterSection() {
             <div className="grayscale opacity-80 hover:opacity-100 transition-opacity">
               <TikTokPartner />
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Navigation Links */}
